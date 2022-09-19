@@ -50,21 +50,6 @@ Right now the current project is still under development, this file will undergo
 
 For more information about the development of the project, please read the file named "Changelog.md". It contain all changes that happen for the project chronologically.
 
-## QnA (Implementation Choice)
 
-### Why did i immediately focus heavily on linked list instead of making array first?
-When I build code, I really need to have a strong foundation for the code as I have difficulty connecting player to the system of the game. That is why my project progress is qute slow compared to the others. However, the moment I manage to perfect the player linked list, I already know all the steps that must be done to complete the project as having a strong base can lead to more easier building process. 
-
-### Why did i make the initialize stockpile to be a sequence of i = i + 1?
-The reason is because i also want to compare to determine which one is higher, where it is needed during the process finding the first player. That is why, I make the initialize stockpile to be 1 - 52 in order to make it more easier to compare.
-
-### Why did i use a counter to calculate the ammount of stockpile and discardpile?
-One of the greatest challenge with this project is managing the memory and avoid memory leak or overflow. I choose the "counter" method in order to avoid those kind of memory accident. Instead of reallocating the memory, I have the counter that calculate how many card is left in the stockpile or in the discard pile without needing to reallocate. If the counter for the stockpile reach 0, it indicates I already used all of the cards in the stock pile.
-
-### Why did i keep building the project on a single file first before dividing into several files?
-Since I am building this project alone and having multiple files can make my work more harder as I need to compile more than 1 file. However, by keeping the file into 1 and divide it during the final time, it can make my work more efficient.
-
-### Why did i add a counter of "attack2" and "attack3" for the attack card?
-As I notice the game let you to stack all the attack card, I need to have a variable that counts the number of attack card has been used. That is why I decided to make a counter to account the ammount of "attack2" or "attack3" are being used. If the player already draw the card due to the attack card, then it will reset to 0. This also make the game fun as you can stack all the attack card making a combo with it and target to a specific player.
 
 
