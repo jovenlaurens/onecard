@@ -1,6 +1,6 @@
-# P2 Project (One Card)
+# One Card
 
-P2 is a c project where it simulate one card games scenario. Users will face another player in a card game scenario, where the player task need to empty their card hands before other player does.
+P2 is a c project where it simulate one card games scenario using the terminal for ther user interface. Users will face another player in a card game scenario, where the player task need to empty their card hands before other player does.
 
 ## Overview
 
@@ -33,14 +33,15 @@ As soon as a player has discarded all his cards the rounds stops. All other play
 
 ## How to setup
 
-1. Compiling the program using this command "gcc onecard.c function_list.c -O2 -Werror -Wall -Wextra -Wpedantic -std=c11 -o onecard"
-2. Before running the code, make sure you have run ".\onecard -h" or ".\onecard --help" and read the description
-3. After reading the description, you can run the program with some custom settings, where you can type in the format of "onecard.exe "the command""
-4. If you preferred to use the default setting, you can simply run the program by using ".\onecard"
-5. DO NOT INPUT A CHARACTER OF WORD DURING THE GAME AND INPUT 1 INPUT NUMBER ONLY
-   1. This is because my program only accept number only, where if you add a character of word, it will cause my program to run into an infinite loop. If you encounter an infinite loop due to mis-input, then press "Ctrl + C" to stop it. Since my program read 1 input, adding 2 input will cause my program to run 1 step ahead where you already play 2 players immediately.
-6. DO NOT CLOSE THE .EXE FILE WHEN IT IS STILL RUNNING
-   1. This will cause the log file to stuck in a loop where it will keep writing while it never ends. To solve this kinds of issue, you need to restart your computer as deleting it won't works due to the file keep running.
+1. Git clone this repository using git 
+2. Compile the program using this command `gcc onecard.c function_list.c -O2 -Werror -Wall -Wextra -Wpedantic -std=c11 -o onecard`
+3. Run the program using this command `./onecard` (for bash or powershell user) or `onecard.exe` (for command prompt user), where this will use the default setting for the game
+3. If you prefer to customize your game, you can run the program with some custom settings, where you can type in the format of `./onecard "command"` (for bash or powershell user) or `onecard.exe "command"` (for command prompt user),
+4. There are some several warning that you need to pay attention to:
+    1. **DO NOT INPUT A CHARACTER OF WORD DURING THE GAME AND INPUT 1 INPUT NUMBER ONLY**
+        - This is because my program only accept number only, where if you add a character of word, it will cause my program to run into an infinite loop. If you encounter an infinite loop due to mis-input, then press "Ctrl + C" to stop it. Since my program read 1 input, adding 2 input will cause my program to run 1 step ahead where you already play 2 players immediately.
+    2. **DO NOT CLOSE THE .EXE FILE WHEN IT IS STILL RUNNING**
+        - This will cause the log file to stuck in a loop where it will keep writing while it never ends. To solve this kinds of issue, you need to restart your computer as deleting it won't works due to the file keep running.
 
 ## Remainder
 
